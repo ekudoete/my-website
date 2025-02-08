@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research and Publications</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.3em;
+            color: pink;
+            margin-bottom: 10px;
+            margin-top: 80px; /* Added margin to push the heading down */
+        }
+
+        .header .divider {
+            width: 300px;
+            height: 2px;
+            background-color: pink;
+            margin: 20px auto;
+        }
+
+        /* Folder Container */
+        .folder-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+            gap: 70px; /* Increased gap between the folders */
+            justify-items: center; /* Centers the items in each grid cell */
+            margin-top: 40px;
+            padding: 40px;
+            border-radius: 15px;
+            width: 80%; /* Make the container wider */
+            max-width: 1200px; /* Set a max width to prevent stretching */
+            margin-left: auto;
+            margin-right: auto; /* Center the container */
+            margin-bottom: 300px; /* Add space between folders and footer */
+        }
+
+        /* Individual Folder */
+        .folder {
+            width: 180px;
+            height: 150px;
+            background: #8B4513; /* Brown color */
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .folder-tab {
+            width: 50%;
+            height: 20px;
+            background: #f1c0c0;
+            position: absolute;
+            top: -10px;
+            left: 25%;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .folder a {
+            text-decoration: none;
+            color: #ffffff; /* White text */
+            font-size: 16px;
+            display: block;
+            margin-top: 40px; /* Added margin for better spacing */
+            font-weight: bold;
+        }
+
+        .folder a:hover {
+            color: black;
+        }
+
+        .folder:hover {
+            transform: scale(1.1);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            width: 100%;
+            background-color: #000000; /* Black background */
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: flex-end; /* Align navbar to the right */
+            z-index: 1000;
+            padding-right: 50px; /* Adjust padding to fit the items properly */
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 1;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Adds space between items */
+        }
+
+        .navbar ul li {
+            margin: 0;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        .navbar ul li a.active {
+            border-bottom: 2px solid white;
+        }
+
+        .navbar ul li a:hover {
+            color: gray;
+        }
+
+        /* Footer Styling */
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 0.9em;
+            color: white;
+            width: 100%;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="Ekom.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Research and Publications.html" class="active">Research</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>My research spans digital rhetoric, 
+                multilingualism, accessibility, and Voice A.I, focusing on creating inclusive, 
+                human-centered technology solutions.</h1>
+            <div class="divider"></div>
+        </div>
+        <div class="folder-container">
+            <div class="folder" id="folder1">
+                <div class="folder-tab"></div>
+                <!-- Link to research document -->
+                <a href="Folder 1.html" target="_blank">Journal Articles</a>
+            </div>
+            <div class="folder" id="folder2">
+                <div class="folder-tab"></div>
+                <!-- Link to research document -->
+                <a href="Folder 2.html" target="_blank">Book Reviews</a>
+            </div>
+            <div class="folder" id="folder3">
+                <div class="folder-tab"></div>
+                <!-- Link to research document -->
+                <a href="Folder 3.html" target="_blank">Conferences</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Looking forward to hearing from you!</p>
+        <div>
+           | <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">LinkedIn</a> |
+        </div>
+        <p>© 2024 Ekom Udoete. All rights reserved.</p>
+    </footer>
+</body>
+</html>
